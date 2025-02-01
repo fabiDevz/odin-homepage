@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+.header-container {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+
+.photo-container {
+    padding-right: 1vh;
+
+}
+
+.photo-container img {
+    max-width: 600px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.about-me-container {
+    background-color: #FFFF;
+    margin-top: 5vh;
+    min-width: 800px;
+    max-height: 300px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 2vh;
+}
+
+.about-me-container p 
+{
+    max-width: 700px;
+}
