@@ -180,11 +180,6 @@ body::before {
     height: 100%;
     width: 100%;
     border-radius: 0.5rem;
-    box-shadow:
-        0 0 5px #FFD700,
-        0 0 10px #FFD700,
-        0 0 20px #660099,
-        0 0 40px #660099;
 }
 
 .footer-left h2 {
@@ -258,11 +253,6 @@ body::before {
         min-width: 25rem;
     }
 
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-    }
-
     .footer-left>div {
         display: flex;
         align-items: center;
@@ -286,9 +276,24 @@ body::before {
         font-size: 4rem;
     }
 
-    .footer-right{
-        min-width: 25rem;
+    .footer-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-end; 
+        width: 100%;
+        padding: 0; 
+        margin: 0; 
     }
     
+    .footer-right {
+        width: 100%;
+    }
+    
+    .footer-right img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
 }
