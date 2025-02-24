@@ -1,5 +1,16 @@
 * {
     margin: 0;
+
+
+}
+
+html {
+    font-size: 12px;
+    font-family: "Lato", serif;
+}
+
+body {
+    background-color: #1A1A1A;
 }
 
 body::before {
@@ -8,10 +19,10 @@ body::before {
     z-index: -1;
     width: 100%;
     height: 30rem;
-    background-color: #003366;;
+    background-color: #003366;
     transform-origin: 0;
     transform: skewY(-10deg);
-  
+
 }
 
 
@@ -24,27 +35,37 @@ body::before {
 }
 
 .photo-container {
-    padding-right: 1vh;
-
-
+    position: relative;
 }
 
 .photo-container img {
-    max-width: 600px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    max-width: 50rem;
+    box-shadow:
+        0 0 5px #FFD700,
+        0 0 10px #FFD700,
+        0 0 20px #660099,
+        0 0 40px #660099;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.photo-container img:hover {
+    box-shadow:
+        0 0 10px #00FFFF,
+        0 0 20px #00FFFF,
+        0 0 30px #660099,
+        0 0 50px #660099;
 }
 
 .about-me-container {
     background-color: #FFFF;
     margin-top: 5vh;
-    min-width: 800px;
-    max-height: 300px;
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    padding: 3vh;
+    box-shadow:
+        0 0 5px #FFD700,
+        0 0 10px #FFD700,
+        0 0 20px #660099,
+        0 0 40px #660099;
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 2rem;
     font-family: "Roboto", serif;
     display: flex;
     flex-direction: column;
@@ -57,10 +78,9 @@ body::before {
 }
 
 .about-me-container p {
-    max-width: 700px;
+    max-width: 60rem;
     font-size: 1.5rem;
     text-align: justify;
-
 }
 
 .about-me-container-logos {
@@ -70,35 +90,205 @@ body::before {
 }
 
 .about-me-container-logos>img {
-    margin-right: 2rem;
+    padding: 1rem;
 }
 
 .body-container {
+    display: grid;
+    justify-content: center;
+    padding: 3rem;
+}
 
+
+
+.body-container>h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #FFFF;
+    font-size: 4rem;
 }
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(3, auto); /* Ajusta las columnas al contenido */
-    gap: 10px; /* Espacio entre columnas y filas */
-    justify-content: center; /* Centra el grid horizontalmente */
+    grid-template-columns: repeat(3, auto);
+    gap: 5rem;
+    justify-content: center;
 }
 
 
-.project-card{
-    width: 20rem;
-    height: 20rem;;
-    border: 2px solid black;
+.project-card {
+    font-family: "Lato", serif;
+    height: 30rem;
+    border-radius: 0.1rem;
+    background-color: #F1F0EA;
+    box-shadow:
+        0 0 5px #FFD700,
+        0 0 10px #FFD700;
+    transition: box-shadow 0.3s ease-in-out;
+
 }
 
+.project-card:hover {
+    box-shadow:
+        0 0 10px #00FFFF,
+        0 0 20px #00FFFF,
+        0 0 30px #660099,
+        0 0 50px #660099;
+}
 
-/* 
-Colores de Ultimate Armor X 
-#003366;  Azul oscuro metálico 
-#1A1A1A;  Negro metálico 
-#CCCCCC; /* Gris plateado 
-#FFFFFF; /* Blanco brillante 
-#660099; /* Morado oscuro translúcido 
-#FFD700; /* Dorado metálico 
-#00FFFF; /* Cian brillante 
-#FF0000; Rojo vibrante */
+.project-card>img {
+    max-width: 100%;
+
+}
+
+.project-card-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card-title>div>img {
+    padding-right: 0.5rem;
+}
+
+.project-card-title>div>img:hover {
+    cursor: pointer;
+}
+
+.project-card-title,
+.project-card>p {
+    padding: 1rem;
+}
+
+.project-card>p {
+    overflow: hidden;
+}
+
+.footer-container {
+
+    background-color: #003366;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 5rem;
+}
+
+.footer-right {
+    max-width: 70rem;
+    max-height: 40rem;
+}
+
+.footer-right>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow:
+        0 0 5px #FFD700,
+        0 0 10px #FFD700,
+        0 0 20px #660099,
+        0 0 40px #660099;
+}
+
+.footer-left h2 {
+    font-family: "Lato", serif;
+    color: #FFFF;
+    padding: 2rem;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logos img {
+    padding-right: 1.5rem;
+    filter: invert(1);
+
+}
+
+.overlay-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00FFFF;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/*MEDIA QUERIES*/
+
+/*Diseño para movil*/
+@media (max-width:600px) {
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .photo-container {
+        display: flex;
+        justify-content: center;
+        min-width: 25rem;
+
+    }
+
+    .photo-container>img {
+        max-width: 100%;
+    }
+
+    .about-me-container {
+        min-width: 25rem;
+    }
+
+
+
+    .body-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card {
+        min-width: 25rem;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-left>div {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .footer-left>div>svg {
+
+        width: 40px;
+        fill: #FFFF;
+  
+
+    }
+
+    .footer-logos
+    {
+        padding: 2rem;
+    }
+
+    #contacto-titulo {
+        font-size: 4rem;
+    }
+
+    .footer-right{
+        min-width: 25rem;
+    }
+    
+
+}
