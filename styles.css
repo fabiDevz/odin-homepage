@@ -65,7 +65,6 @@ body::before {
         0 0 20px #660099,
         0 0 40px #660099;
     transition: box-shadow 0.3s ease-in-out;
-    padding: 2rem;
     font-family: "Roboto", serif;
     display: flex;
     flex-direction: column;
@@ -75,12 +74,14 @@ body::before {
 
 .about-me-container>h2 {
     font-size: 3rem;
+    padding: 2rem;
 }
 
 .about-me-container p {
     max-width: 60rem;
     font-size: 1.5rem;
     text-align: justify;
+    padding: 2rem;
 }
 
 .about-me-container-logos {
