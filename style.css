@@ -1,37 +1,71 @@
-*{
+* {
     font-family: "Montserrat", sans-serif;
-    margin:0;
+    margin: 0;
 }
 
-.main-profile-container
-{
-    background-color: #0F0E14;
+body::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 45rem;
+    background-color: #1A4F72;
+    transform-origin: 0;
+    transform: skewY(-10deg);
+    box-shadow: 0rem 0.1rem 1rem var(--shadow-mountain);
+}
+
+.main-profile-container {
     display: flex;
     justify-content: center;
     padding: 2rem;
     font-size: 2rem;
 
+
 }
 
-.photo-profile{
-    width: 30vw;
+.photo-profile {
+    width: 20vw;
+    height: 60vh;
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
-.about-me-container
-{
+.about-me-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 3rem;
     background-color: #FFFF;
-    width: 60vw;
+    width: 35vw;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.about-me-container h2{
+.profile-logo-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+}
+
+.profile-logo-container i {
+    font-size: 30px;
+}
+
+.about-me-container h2 {
     padding-bottom: 3rem;
 }
 
-.main-work-container
-{
+.about-me-container p {
+    padding-bottom: 3rem;
+}
+
+.main-work-container {
     padding: 10rem;
     display: flex;
     flex-direction: column;
@@ -49,32 +83,78 @@
 .project-card {
     width: 20vw;
     height: 40vh;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-#project-1
-{
-    background-color: rgb(175, 0, 0);
+.project-card img {
+    width: 100%;
+    height: 200px;
 }
 
-#project-2
+.project-card-description-container
 {
-    background-color: rgb(120, 121, 201);
-}
-#project-3
-{
-    background-color: rgb(5, 102, 34);
-}
-#project-4
-{
-    background-color: rgb(148, 0, 136);
-}
-#project-5
-{
-    background-color: rgb(238, 143, 0);
-}
-#project-6
-{
-    background-color: rgb(0, 120, 175);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
+.project-card-description-container p,
+h3 {
+    padding-left: 2rem;
+
+}
+
+.project-card-description-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.project-card-description-container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+
+}
+
+.project-card-description-logo {
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.project-card-description-logo i,
+.project-card-description-logo svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+.main-footer-container {
+    background-color: #0F0E14;
+    color: #FFFF;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-left {
+    max-width: 28rem;
+    align-items: center;
+}
+
+.footer-right {
+    max-width: 55rem;
+}
