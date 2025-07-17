@@ -55,6 +55,7 @@ body::before {
 
 .profile-logo-container i {
     font-size: 30px;
+    color: #000;
 }
 
 .about-me-container h2 {
@@ -96,8 +97,7 @@ body::before {
     height: 200px;
 }
 
-.project-card-description-container
-{
+.project-card-description-container {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -106,6 +106,10 @@ body::before {
 h3 {
     padding-left: 2rem;
 
+}
+
+.project-card-description-container p {
+    padding-top: 2rem;
 }
 
 .project-card-description-logo {
@@ -143,18 +147,64 @@ h3 {
 
 
 .main-footer-container {
-    background-color: #0F0E14;
-    color: #FFFF;
-    display: flex;
-    justify-content: center;
 
+    padding: 20px 40px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    height: 100%;
+    display: flex;
 }
 
 .footer-left {
-    max-width: 28rem;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 30%;
 }
 
+.footer-left h2 {
+    padding-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.footer-left p {
+    font-size: 20px;
+    padding-bottom: 2rem;
+}
+
+.footer-left-contact-item {
+ display: flex;
+}
+
+.footer-left-contact-item svg
+{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+    fill: #FFFF ;
+}
+
+.footer-social-media
+{
+    font-size: 40px;
+    padding-bottom: 100px;
+}
+
+.footer-social-media > i 
+{
+    padding-right: 20px;
+    color: #FFFF;
+}
+
+
+
 .footer-right {
-    max-width: 55rem;
+   width: 60%;
+   display: flex;
+   justify-content: end;
+}
+
+.footer-right img{
+    width: 60%;
 }
