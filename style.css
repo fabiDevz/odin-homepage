@@ -64,6 +64,7 @@ body::before {
 
 .about-me-container p {
     padding-bottom: 3rem;
+    text-align: justify;
 }
 
 .main-work-container {
@@ -174,25 +175,22 @@ h3 {
 }
 
 .footer-left-contact-item {
- display: flex;
+    display: flex;
 }
 
-.footer-left-contact-item svg
-{
+.footer-left-contact-item svg {
     width: 20px;
     height: 20px;
     padding-right: 5px;
-    fill: #FFFF ;
+    fill: #FFFF;
 }
 
-.footer-social-media
-{
+.footer-social-media {
     font-size: 40px;
     padding-bottom: 100px;
 }
 
-.footer-social-media > i 
-{
+.footer-social-media>i {
     padding-right: 20px;
     color: #FFFF;
 }
@@ -200,11 +198,172 @@ h3 {
 
 
 .footer-right {
-   width: 60%;
-   display: flex;
-   justify-content: end;
+    width: 60%;
+    display: flex;
+    justify-content: end;
 }
 
-.footer-right img{
+.footer-right img {
     width: 60%;
+}
+
+/*Estilos responsivos para tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .main-profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photo-profile {
+        width: 70vw;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+     .about-me-container {
+        width: 70vw;
+        padding: 2rem;
+        font-size: 3rem;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+
+    .profile-logo-container {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .profile-logo-container i{
+        font-size: 80px;
+    }
+
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main-profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .photo-profile {
+        width: 60vw;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .about-me-container {
+        width: 90%;
+        padding: 2rem;
+        font-size: 1rem;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+
+    .profile-logo-container {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .main-work-container {
+        padding: 4rem 1rem;
+    }
+
+    .main-work-container h2 {
+        padding-left: 2rem;
+    }
+
+    .project-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .project-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .project-card img {
+        height: auto;
+    }
+
+    .project-card-description-container {
+        padding: 1rem;
+    }
+
+    .project-card-description-container h3,
+    .project-card-description-container p {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .project-card-description-logo {
+        justify-content: flex-end;
+        padding-right: 0;
+    }
+
+    .main-footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 70%;
+        padding: 1rem 0;
+    }
+
+    .footer-left h2 {
+        font-size: 2.5rem;
+    }
+
+    .footer-left p {
+        font-size: 1.5rem;
+    }
+
+    .footer-left-contact-item {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+
+    }
+
+    .footer-left-contact-item svg {
+        height: 30px;
+        width: 30px;
+        align-items: center;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-right img {
+        width: 80%;
+    }
+
+    .footer-social-media {
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .footer-social-media i {
+        padding: 0 0.5rem;
+    }
 }
